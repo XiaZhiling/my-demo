@@ -14,10 +14,10 @@
 	</resultMap>
 	
 	<select id="selectUserByID" parameterType="int" resultType="User">
-        select * from user where uid = #{uid}
+        select * from "User" where uid = #{uid}
     </select>
     
     <select id="selectUsers" parameterType="string" resultMap="resultListUser">
-        select * from user where userName like #{userName}
+        select * from "User" where userName like #{userName}
     </select>
 </mapper>
